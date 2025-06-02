@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papol - Innovative Products</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Papol</div>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="Search">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Innovative Products</h1>
+                <p>Designed for you by Papol.</p>
+                <a href="#products" class="btn">Learn More</a>
+            </div>
+        </section>
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product">
+                <img src="https://via.placeholder.com/600x400" alt="Product 1">
+                <div class="product-content">
+                    <h3>Product 1</h3>
+                    <p>Discover the future with Product 1. Sleek design and cutting-edge technology.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/600x400" alt="Product 2">
+                <div class="product-content">
+                    <h3>Product 2</h3>
+                    <p>Elevate your experience with Product 2. Innovation meets elegance.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+            </ul>
+        </div>
+        <p>© 2025 Papol. All rights reserved.</p>
+    </footer>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
